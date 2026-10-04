@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Quiet Cup – 30-Day Instagram Content Calendar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EEF0EA; --card:#F8F9F5; --ink:#26201C; --muted:#6E6A63; --line:#D6D9CF;
+  --brew:#5A341B;
+  --Educational:#3E6B5A; --Engagement:#7D4F92; --Informational:#3F6C8F; --Promotional:#A67A1E;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 "Work Sans",system-ui,sans-serif}
+.wrap{max-width:1120px;margin:0 auto;padding:56px 24px 72px}
+h1,h2,h3{font-family:"Instrument Serif",Georgia,serif;font-weight:400;margin:0}
+h1{font-size:clamp(2.6rem,6vw,4.4rem);line-height:1.02;color:var(--brew);max-width:14ch}
+.lede{max-width:60ch;margin:18px 0 0;color:var(--muted);font-size:1.08rem}
+.facts{display:flex;flex-wrap:wrap;gap:8px 28px;margin:28px 0 0;padding:0;list-style:none;font-size:.95rem}
+.facts b{font-weight:600}
+.legend{display:flex;flex-wrap:wrap;gap:14px 22px;margin:44px 0 14px;font-size:.9rem}
+.legend span{display:inline-flex;align-items:center;gap:8px}
+.legend i{width:12px;height:12px;border-radius:50%;display:inline-block}
+.board{display:grid;grid-template-columns:1fr 340px;gap:28px;align-items:start}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.dow{font-size:.78rem;color:var(--muted);padding:0 4px 4px}
+.day{min-height:104px;border-radius:6px;padding:8px;background:transparent;border:1px dashed var(--line);font:inherit;text-align:left;color:var(--muted)}
+.day .n{font-size:.8rem}
+button.day{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--c);cursor:pointer;color:var(--ink);display:flex;flex-direction:column;gap:4px}
+button.day:hover{border-color:var(--c)}
+button.day[aria-pressed="true"]{background:#fff;box-shadow:0 0 0 2px var(--c)}
+button.day:focus-visible{outline:3px solid var(--brew);outline-offset:2px}
+.day .t{font-size:.82rem;line-height:1.3;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.day .ty{font-size:.72rem;color:var(--c);font-weight:600;margin-top:auto}
+.detail{position:sticky;top:20px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:24px}
+.detail .kind{font-weight:600;font-size:.88rem;color:var(--c)}
+.detail h3{font-size:1.75rem;line-height:1.15;margin:6px 0 14px}
+.detail dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 14px;font-size:.92rem}
+.detail dt{color:var(--muted)}
+.detail dd{margin:0}
+.cap{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-size:1.25rem;line-height:1.35;margin:16px 0 0;padding-left:12px;border-left:3px solid var(--c)}
+section.plan{margin-top:80px;display:grid;grid-template-columns:1fr 1fr;gap:48px}
+h2{font-size:2.2rem;color:var(--brew);margin-bottom:18px}
+ol.weeks{list-style:none;margin:0;padding:0;counter-reset:w}
+ol.weeks li{counter-increment:w;padding:14px 0 14px 56px;border-top:1px solid var(--line);position:relative}
+ol.weeks li::before{content:counter(w);position:absolute;left:0;top:6px;font-family:"Instrument Serif",serif;font-size:2.4rem;color:var(--brew)}
+ol.weeks b{display:block;font-weight:600}
+ol.weeks span{color:var(--muted);font-size:.93rem}
+.bar{display:flex;height:22px;border-radius:4px;overflow:hidden;margin:6px 0 18px}
+.bar div{background:var(--c)}
+.mix{list-style:none;margin:0;padding:0;font-size:.95rem}
+.mix li{display:flex;justify-content:space-between;padding:8px 0;border-top:1px solid var(--line)}
+.mix li span:first-child::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--c);margin-right:10px}
+.note{color:var(--muted);font-size:.93rem;margin-top:14px}
+footer{margin-top:72px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+a{color:var(--brew)}
+@media (max-width:900px){
+  .board,section.plan{grid-template-columns:1fr}
+  .detail{position:static}
+}
+@media (max-width:620px){
+  .grid{grid-template-columns:1fr}
+  .dow,.day.empty{display:none}
+  .day{min-height:auto}
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <h1>Thirty quiet days on Instagram</h1>
+  <p class="lede">A one-month content calendar for The Quiet Cup, a cozy café for students and remote workers. The month builds awareness first, then launches a new Signature Cold Brew.</p>
+  <ul class="facts">
+    <li><b>Platform</b> Instagram</li>
+    <li><b>Posts</b> 17, four a week</li>
+    <li><b>Goals</b> brand awareness, cold brew launch</li>
+  </ul>
+
+  <div class="legend" id="legend"></div>
+  <div class="board">
+    <div>
+      <div class="grid" id="grid" aria-label="30-day calendar, select a post to see details"></div>
+    </div>
+    <aside class="detail" id="detail" aria-live="polite"></aside>
+  </div>
+
+  <section class="plan">
+    <div>
+      <h2>How the month unfolds</h2>
+      <ol class="weeks">
+        <li><b>Welcome to The Quiet Cup</b><span>Days 1–7. Introduce the space, the vibe and the people.</span></li>
+        <li><b>Your study and work spot</b><span>Days 8–14. Wi-Fi, quiet corners and focus tips that make the café useful.</span></li>
+        <li><b>Something new is brewing</b><span>Days 15–21. A teaser, the brewing process, then the cold brew launch.</span></li>
+        <li><b>Sip, share, stay</b><span>Days 22–30. Offers, a photo contest and reposts of customer moments.</span></li>
+      </ol>
+    </div>
+    <div>
+      <h2>Content mix</h2>
+      <div class="bar" id="bar" role="img" aria-label="Content mix bar"></div>
+      <ul class="mix" id="mix"></ul>
+      <p class="note">Promotional posts stay under a quarter of the feed and sit mostly in the last two weeks, after the audience already knows the café.</p>
+      <h2 style="margin-top:40px">Posting times</h2>
+      <ul class="mix">
+        <li><span style="--c:var(--brew)">Monday and Wednesday</span><span>7:30 PM</span></li>
+        <li><span style="--c:var(--brew)">Friday</span><span>6:00 PM</span></li>
+        <li><span style="--c:var(--brew)">Saturday</span><span>11:00 AM</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <span>Made by Sadhanala Nischay Prasad</span>
+    <span>Planned in Google Sheets, designed for Canva and Instagram. <a href="The_Quiet_Cup_Content_Calendar.xlsx">Download the spreadsheet</a></span>
+  </footer>
+</main>
+<script>
+const posts = [{"day": 1, "weekday": "Mon", "week": "W1 – Welcome to The Quiet Cup", "time": "7:30 PM", "type": "Informational", "topic": "First look inside The Quiet Cup", "format": "Reel (slow pan of the space, soft music)", "caption": "Find your quiet. ☕ Now open.", "tags": "#TheQuietCup #CafeVibes #CozyCafe | CTA: Follow for more", "objective": "Awareness"}, {"day": 3, "weekday": "Wed", "week": "W1 – Welcome to The Quiet Cup", "time": "7:30 PM", "type": "Educational", "topic": "5 tips for a productive café study session", "format": "Carousel", "caption": "Save this for your next deadline 📚", "tags": "#StudyCafe #StudyTips #Productivity | CTA: Save & share", "objective": "Awareness"}, {"day": 5, "weekday": "Fri", "week": "W1 – Welcome to The Quiet Cup", "time": "6:00 PM", "type": "Engagement", "topic": "\"Which corner is yours?\" (window seat, couch, focus desk)", "format": "Carousel + comment prompt", "caption": "Comment 1, 2, or 3 👇", "tags": "#TheQuietCup #CafeCorner | CTA: Comment your pick", "objective": "Awareness"}, {"day": 6, "weekday": "Sat", "week": "W1 – Welcome to The Quiet Cup", "time": "11:00 AM", "type": "Informational", "topic": "Meet our barista", "format": "Single photo + Story Q&A", "caption": "The hands behind your cup", "tags": "#MeetTheBarista #CoffeeLovers | CTA: Ask her anything in Stories", "objective": "Awareness"}, {"day": 8, "weekday": "Mon", "week": "W2 – Your study & work spot", "time": "7:30 PM", "type": "Informational", "topic": "Work-from-café guide: Wi-Fi, plug points, quiet hours", "format": "Carousel", "caption": "Everything you need for a full workday here 💻", "tags": "#WorkFromCafe #RemoteWork #TheQuietCup | CTA: Save this", "objective": "Awareness"}, {"day": 10, "weekday": "Wed", "week": "W2 – Your study & work spot", "time": "7:30 PM", "type": "Educational", "topic": "Pomodoro at The Quiet Cup: 25 min focus, 5 min sip", "format": "Reel (timer overlay)", "caption": "Focus in sprints, sip in between ⏱️", "tags": "#Pomodoro #StudyWithMe #Productivity | CTA: Try it & tag us", "objective": "Awareness"}, {"day": 12, "weekday": "Fri", "week": "W2 – Your study & work spot", "time": "6:00 PM", "type": "Engagement", "topic": "\"Drop your focus playlist\" – we'll play the top picks", "format": "Single image + Story poll", "caption": "Your playlist could be our café soundtrack 🎧", "tags": "#StudyMusic #CafeVibes | CTA: Comment your song", "objective": "Awareness"}, {"day": 13, "weekday": "Sat", "week": "W2 – Your study & work spot", "time": "11:00 AM", "type": "Educational", "topic": "Coffee 101: espresso vs filter vs cold brew", "format": "Carousel", "caption": "Not all coffee is made equal ☕ (slide 3 is a hint 👀)", "tags": "#Coffee101 #CoffeeLovers | CTA: Save & share", "objective": "Awareness"}, {"day": 15, "weekday": "Mon", "week": "W3 – Something new is brewing", "time": "7:30 PM", "type": "Engagement", "topic": "Teaser: blurred close-up – \"Guess what's brewing?\"", "format": "Single image", "caption": "Something new is coming. Guess right in the comments 👀", "tags": "#ComingSoon #TheQuietCup | CTA: Comment your guess", "objective": "Promotion"}, {"day": 17, "weekday": "Wed", "week": "W3 – Something new is brewing", "time": "7:30 PM", "type": "Educational", "topic": "How our cold brew is made: 18 hours of patience", "format": "Reel (behind the scenes)", "caption": "Good things take time. 18 hours, to be exact ❄️", "tags": "#ColdBrew #BehindTheScenes | CTA: Turn on notifications", "objective": "Promotion"}, {"day": 19, "weekday": "Fri", "week": "W3 – Something new is brewing", "time": "6:00 PM", "type": "Promotional", "topic": "LAUNCH: Signature Cold Brew is here", "format": "Reel (hero pour shot)", "caption": "Smooth, bold, made slow. Meet our Signature Cold Brew 🧊", "tags": "#SignatureColdBrew #NewOnTheMenu | CTA: Visit this weekend", "objective": "Promotion"}, {"day": 20, "weekday": "Sat", "week": "W3 – Something new is brewing", "time": "11:00 AM", "type": "Promotional", "topic": "Launch weekend offer: 20% off first cold brew", "format": "Single image + Story with countdown", "caption": "Show this post at the counter. This weekend only ⏳", "tags": "#ColdBrewWeekend #CafeOffers | CTA: Show post for 20% off", "objective": "Promotion"}, {"day": 22, "weekday": "Mon", "week": "W4 – Sip, share, stay", "time": "7:30 PM", "type": "Educational", "topic": "3 ways to enjoy cold brew: black, with milk, with tonic", "format": "Carousel", "caption": "Which team are you? Black, milky or fizzy? 🥤", "tags": "#ColdBrew #CoffeeTips | CTA: Save & try all 3", "objective": "Promotion"}, {"day": 24, "weekday": "Wed", "week": "W4 – Sip, share, stay", "time": "7:30 PM", "type": "Engagement", "topic": "Share your Quiet Cup moment (UGC contest)", "format": "Single image + Story", "caption": "Post your Quiet Cup moment & tag us – best one wins a week of cold brew 🏆", "tags": "#MyQuietCup #TheQuietCup | CTA: Post & tag to enter", "objective": "Awareness"}, {"day": 26, "weekday": "Fri", "week": "W4 – Sip, share, stay", "time": "6:00 PM", "type": "Promotional", "topic": "Study Combo: cold brew + cookie student deal", "format": "Single image", "caption": "Deadline fuel, student price 📚☕", "tags": "#StudentDeals #StudyCafe | CTA: Show student ID", "objective": "Promotion"}, {"day": 27, "weekday": "Sat", "week": "W4 – Sip, share, stay", "time": "11:00 AM", "type": "Informational", "topic": "Your Quiet Cup moments – reposting your photos", "format": "Carousel (customer photos)", "caption": "You made this month special. Thank you 💛", "tags": "#MyQuietCup #CafeCommunity | CTA: Tag us to be featured", "objective": "Awareness"}, {"day": 29, "weekday": "Mon", "week": "W4 – Sip, share, stay", "time": "7:30 PM", "type": "Promotional", "topic": "Month recap + cold brew now on the permanent menu", "format": "Reel (month highlights)", "caption": "One month, lots of quiet moments. Cold brew is here to stay ❄️", "tags": "#TheQuietCup #SignatureColdBrew | CTA: Follow & visit", "objective": "Promotion"}];
+const types = ["Educational","Engagement","Informational","Promotional"];
+const byDay = Object.fromEntries(posts.map(p=>[p.day,p]));
+document.getElementById("legend").innerHTML = types.map(t=>`<span><i style="background:var(--${t})"></i>${t}</span>`).join("");
+const grid = document.getElementById("grid");
+let html = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"].map(d=>`<div class="dow">${d}</div>`).join("");
+for(let d=1; d<=30; d++){
+  const p = byDay[d];
+  html += p
+    ? `<button class="day" style="--c:var(--${p.type})" data-day="${d}" aria-pressed="false"><span class="n">Day ${d}</span><span class="t">${p.topic}</span><span class="ty">${p.type}</span></button>`
+    : `<div class="day empty"><span class="n">${d}</span></div>`;
+}
+grid.innerHTML = html;
+const detail = document.getElementById("detail");
+function show(d){
+  const p = byDay[d];
+  grid.querySelectorAll("button.day").forEach(b=>b.setAttribute("aria-pressed", b.dataset.day==d));
+  detail.style.setProperty("--c", `var(--${p.type})`);
+  detail.innerHTML = `<div class="kind">${p.type} · Day ${p.day}</div><h3>${p.topic}</h3>
+  <dl><dt>When</dt><dd>${p.weekday}, ${p.time}</dd><dt>Format</dt><dd>${p.format}</dd>
+  <dt>Week</dt><dd>${p.week.replace(/^W\d – /,"")}</dd><dt>Goal</dt><dd>${p.objective}</dd>
+  <dt>Tags</dt><dd>${p.tags}</dd></dl><p class="cap">“${p.caption}”</p>`;
+}
+grid.addEventListener("click", e=>{const b=e.target.closest("button.day"); if(b) show(+b.dataset.day);});
+show(1);
+const counts = types.map(t=>posts.filter(p=>p.type===t).length);
+document.getElementById("bar").innerHTML = types.map((t,i)=>`<div style="--c:var(--${t});flex:${counts[i]}"></div>`).join("");
+document.getElementById("mix").innerHTML = types.map((t,i)=>`<li><span style="--c:var(--${t})">${t}</span><span>${counts[i]} posts · ${Math.round(counts[i]/posts.length*100)}%</span></li>`).join("");
+</script>
+</body>
+</html>
